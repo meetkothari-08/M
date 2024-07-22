@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <div class="hero-section">
+    <h1>Welcome to the Music Recommendation App!</h1>
+    <form action="/search" method="get">
+        <label for="search_query">Search for a song, album, or artist:</label><br>
+        <input type="text" id="search_query" name="query"><br>
+        <input type="submit" value="Search">
+    </form>
+    </div>
+</body>
+</html>

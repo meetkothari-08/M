@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results for "{{ query }}"</h1>
+    <ul>
+        {% for track in tracks %}
+            <li>{{ track.name }} by {{ track.artists[0].name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Add any additional CSS or JavaScript libraries -->
+</head>
+<body>
+    <div class="results-img">
+    <h1 class="search">Search Results for "{{ query }}"</h1>
+    <div class="results-container">
+        {% if tracks %}
+            <ul class="track-list">
+                {% for track in tracks %}
+                    <li class="track-item">
+                        <img src="{% if track.album.images %}{{ track.album.images[0].url }}{% else %}{{ url_for('static', filename='placeholder.png') }}{% endif %}" alt="Album Art">
+                        <div class="track-info">
+                            <h2>{{ track.name }}</h2>
+                            <p>by {{ track.artists[0].name }}</p>
+                            <p>Album: {{ track.album.name }}</p>
+                            <!-- <a href="{{ track.external_urls.spotify }}" target="_blank">Listen on Spotify</a> -->
+                            <a href="{{ track.external_urls.spotify }}" target="_blank">Listen on Spotify</a>
+
+
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+    </div>
+    <button class="back-button"><a href="/" class="back-link">Back to Home</a></button>
+    </div>
+</body>
+</html>

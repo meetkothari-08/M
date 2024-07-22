@@ -1,0 +1,477 @@
+body {
+    font-family: Arial, sans-serif;
+
+
+    color: aqua;
+    background-size: cover;
+
+}
+
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+} */
+
+
+
+
+.hero-section {
+    height: 101vh;
+    /* Ensure hero section covers the entire viewport height */
+    background-image: url("/static/images/3425171.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black color with 50% opacity */
+    z-index: -1;
+    /* Ensure the overlay is behind the content */
+}
+
+.hero-section h1 {
+    margin-top: 20px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-section form {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: larger;
+    margin-top: 5%;
+
+
+}
+
+/* .hero-section ul {
+    list-style-type: none;
+    padding: 5px;
+
+} */
+/* 
+li {
+    margin-bottom: 5px;
+} */
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+
+label[for="search_query"] {
+    font-size: x-large;
+    color: beige;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+input[type="text"] {
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* static/styles.css */
+
+input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    background-color: #004494;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hover state */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Darker shade of the button background color */
+}
+
+/* Active state */
+input[type="submit"]:active {
+    background-color: #003d80;
+    /* Even darker shade on button press */
+}
+
+
+/*here ends homepage css */
+
+.results-img {
+    background-image: url("/static/images/newimg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -1; */
+    color: #fff;
+}
+
+
+
+.search {
+    color: wheat;
+    align-items: center;
+    text-align: center;
+}
+
+.results-container {
+
+    margin-top: 15px;
+    z-index: 1;
+    margin-left: 0px;
+}
+
+.track-list {
+    list-style-type: none;
+    padding: 0;
+    z-index: 2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.track-item {
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 480px;
+    margin-left: 7%;
+    background-color: rgb(37, 141, 202);
+
+}
+
+/* .track-item:hover {
+    transform: scale(1.05) rotate(2deg); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}  */
+
+.track-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.track-info {
+    flex: 1;
+    z-index: 2;
+    color: rgb(3, 1, 162);
+}
+
+.track-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    z-index: 3;
+}
+
+.track-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    z-index: 2;
+}
+
+.track-info a {
+    /* display: inline-block; */
+    color: #130b52;
+    text-decoration: none;       
+    margin-top: 10px;
+}
+
+.track-info a:hover {
+    text-decoration: underline;
+}
+
+a.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+   
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 10px 20px;
+    background-color: #0a2192;
+
+
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+
+    align-items: center;
+
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button a {
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: aqua;
+
+
+
+}
+
+.back-button a:hover {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 575.98px) {
+    .hero-section {
+        padding: 20px;
+        
+    }
+
+    .hero-section h1 {
+        font-size: x-large;
+    }
+
+    .hero-section form {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: medium;
+        margin-top: 5%;
+    }
+
+    .hero-section ul {
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    label[for="search_query"] {
+        font-size: x-large;
+        color: beige;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    input[type="text"] {
+        width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+
+        .results-img {
+            background-image: url("/static/images/newimg.jpg");
+            background-size: contain;
+            background-position: center;
+            background-position: -100px;
+            
+
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            color: #fff;
+        }
+
+        .search {
+            color: wheat;
+            align-items: center;
+            text-align: center;
+            font-size: large;
+        }
+
+
+
+
+        .track-item {
+            display: flex;
+            z-index: 2;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 275px;
+            margin-left: -5%;
+            background-color: rgb(37, 141, 202);
+        }
+
+        .track-item img {
+            margin-right: 0;
+            margin-bottom: 10px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .track-info {
+            text-align: center;
+        }
+    
+
+    .track-info h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        z-index: 3;
+    }
+
+    .track-info p {
+        font-size: 14px;
+        margin-bottom: 5px;
+        z-index: 2;
+    }
+
+
+
+    .track-info a {
+        /* display: inline-block; */
+        color: #130b52;
+        text-decoration: none;       
+        margin-top: 10px;
+    }
+    
+    .track-info a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+    .back-button {
+        display: inline-block;
+        margin-top: 6px;
+        padding: 10px 20px;
+        background-color: #0a2192;
+
+
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+
+        align-items: center;
+
+    }
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }
+
+    .back-button a {
+        margin-top: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: aqua;
+
+
+
+    }
+
+    .back-button a:hover {
+        text-decoration: none;
+    }
+
+
+
+}
