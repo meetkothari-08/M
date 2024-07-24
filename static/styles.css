@@ -206,13 +206,14 @@ input[type="submit"]:active {
     width: 480px;
     margin-left: 7%;
     background-color: rgb(37, 141, 202);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
-/* .track-item:hover {
-    transform: scale(1.05) rotate(2deg); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}  */
+.track-item:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
 
 .track-item img {
     width: 100px;
