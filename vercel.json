@@ -1,5 +1,4 @@
 {
-    "version": 2,
     "builds": [
       {
         "src": "app.py",
@@ -11,6 +10,11 @@
         "src": "/(.*)",
         "dest": "app.py"
       }
+    ],
+    "ignore": [
+      "venv/",
+      "venv/Lib/site-packages/",
+      "venv/Scripts/"
     ]
   }
   
