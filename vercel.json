@@ -12,9 +12,8 @@
       }
     ],
     "ignore": [
-      "venv/",
-      "venv/Lib/site-packages/",
-      "venv/Scripts/"
+      "venv/Lib/",
+      "Lib/"
     ]
   }
   
